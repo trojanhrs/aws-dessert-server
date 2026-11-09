@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dessert-server
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dessertdb
+    username: dessert_ad
+    password: ${DB_PWD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8088
